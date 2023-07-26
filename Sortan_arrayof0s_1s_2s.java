@@ -39,6 +39,8 @@ public class Sortan_arrayof0s_1s_2s
       }
 
     }
+  }
+}
 
 
     //2nd approach is 
@@ -78,13 +80,13 @@ public class Sortan_arrayof0s_1s_2s
      
      
      
-} 
-
-  }
 
 
 
-}
+
+
+
+
 
 // These are the folowing steps:
 
