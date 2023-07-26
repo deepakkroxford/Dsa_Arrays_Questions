@@ -40,7 +40,49 @@ public class Sortan_arrayof0s_1s_2s
 
     }
 
+
+    //2nd approach is 
+
+    // int zero=0;
+    // int one =0;
+    // int two =0;
+    //  for(int i =0;i<a.length;i++)
+    //  {
+    //      if(a[i]==0)
+         
+    //          zero++;
+         
+    //      else if (a[i]==1)
+         
+    //          one++;
+             
+         
+    //      else
+         
+    //          two++;
+    //  }  
+     
+     
+    //  int index=0;
+    //  for(int i=1;i<=zero;i++)
+     
+    //      a[index++]=0;
+     
+    //  for(int i=1;i<=one;i++)
+     
+    //      a[index++]=1;
+     
+    //  for(int i=1;i<=two;i++)
+     
+    //     a[index++]=2;
+     
+     
+     
+} 
+
   }
+
+
 
 }
 
