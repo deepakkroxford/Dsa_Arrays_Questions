@@ -18,6 +18,8 @@ public class Sortan_arrayof0s_1s_2s
     while (mid <= hi) {
       switch (a[mid]) {
         case 0: {
+          
+
           temp = a[lo];
           a[lo] = a[mid];
           a[mid] = temp;
