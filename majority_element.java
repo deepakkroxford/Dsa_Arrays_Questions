@@ -28,3 +28,40 @@ class Solution
         
     }
 }
+
+// optimize method 
+
+class Solution1
+{
+    static int majorityElement(int a[], int size)
+    {
+      int ans = 0;
+        int count = 0;
+
+        // Step 1: Find a candidate for the majority element
+        for (int i=0;i<size;i++) {
+            if (count == 0) {
+                ans = a[i];
+            }
+
+            if (a[i] == ans) {
+                count++;
+            } else {
+                count--;
+            }
+        }
+
+        count = 0;
+        for (int i=0;i<size;i++) {
+            if (a[i] == ans) {
+                count++;
+            }
+        }
+
+        if (count >size / 2) {
+            return ans;
+        } else {
+            return -1;
+        }
+}
+}
