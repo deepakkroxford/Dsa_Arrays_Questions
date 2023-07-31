@@ -33,3 +33,19 @@ public class Power_of_2 {
     }
     
 }
+
+// geeks for solution
+
+/*
+     
+    for(int i= 0;i<Math.sqrt(n);i++){
+        
+           if(Math.pow(2,i)==n)
+           {
+              return true; 
+           }
+        }   
+        
+        return false;
+ */
+       
