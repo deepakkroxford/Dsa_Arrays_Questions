@@ -12,6 +12,11 @@
 //         for(int  i = 0;i<n;i++)
 //         {
 //             sum += ((long)(arr[i])*i);
+                /*
+                 * we can also write this 
+                 * sum =sum+ (long) arr[i]*i;
+                 */
+            
 //         }
 //         int result=(int)(sum%(Math.pow(10,9)+7));
 //         return result;
