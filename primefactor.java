@@ -1,6 +1,6 @@
 public class primefactor {
     public static void main(String[] args) {
-        double n =1021244;
+        double n =24;
         for(int i=2;i<=n;i++)
         { 
             /*
