@@ -22,17 +22,21 @@ public class remove_dupilicate_element {
         // }
 
         //2nd approch in single array only applicable for sorted array
-        int j =0;
-        System.out.println(arr.length-1);
+        int j =0;       
         for(int i =0;i<arr.length-1;i++)
         {
             if(arr[i]!=arr[i+1])
             {
+               
                 arr[j]=arr[i];
                 j++;
+                
             }
         }
-        arr[j]=arr[arr.length-1];
+         arr[j]=arr[arr.length-1];
+
+        System.out.println("the element are");
+
 
         for(int i=0;i<j+1;i++)
         {
