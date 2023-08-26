@@ -51,5 +51,6 @@ public class remove_dupilicate_element {
            hs.add(arr[i]);
         }
         System.out.println(hs);
+
     }
 }
