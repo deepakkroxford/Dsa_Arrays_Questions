@@ -4,6 +4,7 @@ public class Sub_array_withgiven_sum {
     public static void main(String[] args) {
         int s=12;
         int arr[]={1,2,3,7,5};
+        int n = arr.length;
         ArrayList<Integer>ans= new ArrayList<>();
         if(s==0)
         {
