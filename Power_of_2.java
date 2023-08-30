@@ -1,6 +1,6 @@
 public class Power_of_2 {
     public static void main(String[] args) {
-        int n=16;
+        int n=4;
         int temp=0,power=0;
 
         // for(int x=0;x<Math.sqrt(n);x++)
