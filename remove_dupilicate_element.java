@@ -2,7 +2,7 @@
 import java.util.HashSet;
 public class remove_dupilicate_element {
     public static void main(String[] args) {
-        int arr[]={1,2,2,3,4,5,5,5};
+        int arr[]={2, 2, 2, 2, 2};
         Arrays.sort(arr);
         // int temp[]= new int[arr.length];
         // int j =0;
