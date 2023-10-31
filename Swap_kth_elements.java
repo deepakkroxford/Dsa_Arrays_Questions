@@ -5,13 +5,14 @@ public class Swap_kth_elements
         int n =arr.length;
         int k =3;
        
-            int temp=arr[k-1];
-            arr[k-1]=arr[arr.length-k];
-            arr[n-k]=temp;
-            for (int i=0;i<n;i++) {
-                System.out.print(arr[i]+" ");
-            }
-          
+         int temp = arr[k-1];
+         arr[k-1]= arr[arr.length-k];
+         arr[arr.length-k]=temp;
+
+         for(int i =0;i<arr.length;i++)
+         {
+            System.out.print(" "+arr[i]);
+         }
             
             
             
