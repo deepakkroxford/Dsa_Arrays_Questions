@@ -28,6 +28,17 @@ public class Second_Largest {
         }
         System.out.println(slargest);
 
+      //The another approach to solve this question
+       Arrays.sort(arr);
+        for(int i=n-2;i>=0;i--)
+         {
+          if(arr[i]!=arr[n-1])
+          {
+          return arr[i];
+          }
+          return -1;
+
+
         // int n =arr.length;
         // int temp=0;
         // for(int i =0;i<n;i++)
