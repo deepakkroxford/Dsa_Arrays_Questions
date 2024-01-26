@@ -1,3 +1,4 @@
+package Matrix_DSA_Problem;
 import java.util.Scanner;
 
 /**

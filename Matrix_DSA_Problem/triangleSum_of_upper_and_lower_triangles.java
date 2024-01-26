@@ -1,3 +1,4 @@
+package Matrix_DSA_Problem;
 import java.util.Scanner;
 
 /*
@@ -53,7 +54,7 @@ public class triangleSum_of_upper_and_lower_triangles {
         // System.out.println("lower");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {
-                lowersum +=arr[i][j];
+                lowersum += arr[i][j];
             }
         }
         System.out.println("upper" + uppersum);
