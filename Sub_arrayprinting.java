@@ -11,7 +11,7 @@ public class Sub_arrayprinting {
           
             for(int k =i;k<=j;k++)
             {
-                System.out.println(arr[k]);
+                System.out.print(arr[k]);
             }   
             System.out.println();    
             

@@ -47,7 +47,7 @@ public class Equilibrium_Index {
 
          //solution
          
-public class solutions {
+ class s {
 
 	public static int arrayEquilibriumIndex(int[] arr){  
 		//Your code goes here
