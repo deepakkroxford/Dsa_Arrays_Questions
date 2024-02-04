@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Merge_two_sortedArray {
     public static void main(String[] args) {
         /*
@@ -32,61 +34,103 @@ public class Merge_two_sortedArray {
          * 
          */
 
-         int arr1 [] ={1,3, 5, 7};
+        /*
+         * In this approach we used the extra space
+         * time complexcity - O(m+n)+O(m+n)
+         * space complexicty -O(n+m)
+         */
+
+        // int arr1[] = { 1, 3, 5, 7 };
+        // int n = arr1.length;
+
+        // int arr2[] = { 0, 2, 6, 8, 9 };
+        // int m = arr2.length;
+
+        // int arr[] = new int[n + m];
+
+        // int left = 0, right = 0;
+        // int index = 0;
+        // while (left < n && right < m) {
+        //     if (arr1[left] <= arr2[right]) {
+        //         arr[index] = arr1[left];
+        //         left++;
+        //         index++;
+        //     } else {
+        //         arr[index] = arr2[right];
+        //         right++;
+        //         index++;
+        //     }
+        // }
+
+        // while (left < n) {
+        //     arr[index] = arr1[left];
+        //     left++;
+        //     index++;
+
+        // }
+        // while (right < m) {
+        //     arr[index] = arr2[right];
+        //     right++;
+        //     index++;
+        // }
+
+        // for (int i = 0; i < m + n; i++) {
+        //     if (i < n) {
+        //         arr1[i] = arr[i];
+        //     } else {
+        //         arr2[i - n] = arr[i];
+        //     }
+        // }
+        // // this is for printing the array
+        // for (int x = 0; x < n; x++) {
+        //     System.out.println(arr1[x]);
+        // }
+
+        // for (int x = 0; x < m; x++) {
+        //     System.out.println(arr2[x]);
+        // }
+
+
+        /*
+         * Merge them in sorted order without using any extra space.
+         * time complexity -O(m+n)+O(nlogn)+O(mlogn)
+         * space complexity - O(1)
+         */
+
+         int arr1[] = { 1, 3, 5, 7 };
          int n = arr1.length;
+         int arr2[] = { 0, 2, 6, 8, 9 };
+        int m = arr2.length;
 
-         int arr2[]={0 ,2, 6, 8, 9};
-         int m =arr2.length;
+        int arr3[] = new int[n + m];
+        int left = n-1;
+        int right  =0;
 
-         int arr[]=new int[n+m];
-         
-        int left=0,right=0;
-        int index =0;
-         while (left<n && right<m) {
-            if(arr1[left]<=arr2[right])
+        while (left>=0 && right<m) {
+            if(arr1[left]>arr2[right])
             {
-                arr[index]=arr1[left];
-                left++;
-                index++;
-            }
-            else{
-                arr[index]=arr2[right];
+                int temp=arr1[left];
+                arr1[left]=arr2[right];
+                arr2[right]=temp;
+                left--;
                 right++;
-                index++;
-            }
-         }
-
-         while (left<n) {
-            arr[index]=arr1[left];
-            left++;index++;
-
-         }
-         while (right<m) {
-            arr[index]=arr2[right];
-            right++;index++; 
-         }
-
-         for(int i=0;i<m+n;i++)
-         {
-            if(i<n)
-            {
-                arr1[i]=arr[i];
             }
             else{
-                arr2[i-n]=arr[i];
+                break;
             }
-         }
-        //this is for printing the array
-         for(int x=0;x<n;x++)
-         {
-            System.out.println(arr1[x]);
-         }
-
-
-         for(int x=0;x<m;x++)
-         {
-            System.out.println(arr2[x]);
-         }
-       
+            
+        }
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        System.out.println("sorted array first");
+        for (int i : arr1) {
+            System.out.print(i+"\t");
+        }
+      System.out.println();
+        System.out.println("sorted array second");
+        for (int i : arr2) {
+            System.out.print(i+"\t");
+        }
+        
     }
 }
