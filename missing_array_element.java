@@ -30,4 +30,9 @@ class Solution {
         //then after subtract from sum of n number and sum of array element
         return sumn - sum;
     }
+
+    public char[] uniqueOccurrences(int[] arr) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'uniqueOccurrences'");
+    }
 }
