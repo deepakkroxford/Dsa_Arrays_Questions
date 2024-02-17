@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 
-class solution {
+class solutions {
 
     public boolean uniqueOccurrences(int[] arr) {
         HashMap<Integer,Integer> map = new HashMap<>();
@@ -51,7 +51,7 @@ public class unique_number_occurance_by_frequency {
          * -1000 <= arr[i] <= 1000
          */
 
-         solution sol = new solution();
+         solutions sol = new solutions();
 
          int[] arr1 = {1, 2, 2, 1, 1, 3}; // Example input
          boolean result1 = sol.uniqueOccurrences(arr1);
