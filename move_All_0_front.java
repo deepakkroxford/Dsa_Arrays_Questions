@@ -1,7 +1,7 @@
 /**
  * Innermove_All_0_front
  */
-class Solution {
+class Solutionxy {
     public void moveZeroes(int[] nums) {
         int nonzero=nums.length-1;
         for(int i =nums.length-1;i>=0;i--)

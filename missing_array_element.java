@@ -18,7 +18,7 @@ public class missing_array_element{
 
 
 
-class Solution {
+class Solutionx {
     int missingNumber(int array[], int n) {
         // first we have to find the sum of n number
         int sumn = n * (n + 1) / 2;

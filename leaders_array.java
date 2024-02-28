@@ -7,7 +7,7 @@ import java.util.Collections;
 
 
 //Geeks for Geeks
-class Solution {
+class Solution___ {
     // Function to find the leaders in the array.
     static ArrayList<Integer> leaders(int arr[], int n) {
         // Your code here

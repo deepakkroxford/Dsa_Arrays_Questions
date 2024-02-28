@@ -1,7 +1,7 @@
 //{ Driver Code Starts
 //Initial Template for Java
 
-class Solution
+class Solution____
 {
     static int majorityElement(int a[], int size)
     {
