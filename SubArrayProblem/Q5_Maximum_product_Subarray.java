@@ -28,7 +28,7 @@ class BruteToOptimal {
         return maxproduct;
     }
 
-    int maxProductON(int[] arr) {
+    int maxProducttON(int[] arr) {
         int maxproduct = Integer.MIN_VALUE;
         int suffix=1;
         int prefix = 1;
@@ -93,6 +93,8 @@ public class Q5_Maximum_product_Subarray {
 
         BruteToOptimal ans = new BruteToOptimal();
         int arr[] = {0 ,0 ,-5 ,0 ,0};
-        System.out.println(ans.maxProductON(arr));
+        System.out.println(ans.maxProductON3(arr));
+        System.out.println(ans.maxProductON2(arr));
+        System.out.println(ans.maxProducttON(arr));
     }
 }
