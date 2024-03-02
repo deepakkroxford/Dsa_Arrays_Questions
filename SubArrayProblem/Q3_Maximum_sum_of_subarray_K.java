@@ -54,7 +54,7 @@ public class Q3_Maximum_sum_of_subarray_K {
        while(i<=arr.length-k)
        {
         
-        int currentindex= arr[i];
+       
             while(i<=arr.length && j<k+i)
             {
                 

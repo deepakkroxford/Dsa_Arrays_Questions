@@ -1,7 +1,7 @@
 package SubArrayProblem;
 
 class BruteToOptimal {
-    int maxProductON3(int[] arr) {
+    int maxProducttON3(int[] arr) {
         int maxproduct = arr[0];
         for (int i = 0; i < arr.length; i++) {
 
@@ -93,7 +93,7 @@ public class Q5_Maximum_product_Subarray {
 
         BruteToOptimal ans = new BruteToOptimal();
         int arr[] = {0 ,0 ,-5 ,0 ,0};
-        System.out.println(ans.maxProductON3(arr));
+        System.out.println(ans.maxProducttON3(arr));
         System.out.println(ans.maxProductON2(arr));
         System.out.println(ans.maxProducttON(arr));
     }

@@ -1,7 +1,33 @@
 package SubArrayProblem;
 
+import java.util.HashMap;
+
 class count_zero_sumsubarray
 {
+
+    int countOn(int arr[],int n)
+    {
+       
+       int count =0;
+       HashMap<Integer, Integer>map = new HashMap<>();
+       int sum = 0;
+       map.put(sum, 1);
+       for(int i =0;i<n;i++)
+       {
+        sum = sum+arr[i];
+
+        if(!map.containsKey(sum))
+        {
+            map.put(sum, 1);
+        }
+        else{
+            count = count+map.get(sum);
+            map.put(sum, map.get(sum)+1);
+        }
+       }
+        return count;
+    }
+
     int countOn3(int arr[],int n)
     {
        
@@ -46,7 +72,7 @@ class count_zero_sumsubarray
         }
         return count;
     }
-
+   
     
 }
 public class Q6_Zero_sum_Subarray {
@@ -89,5 +115,13 @@ public class Q6_Zero_sum_Subarray {
          * -10^9 <= arr[ i ] <= 10^9
          * 
          */
+
+
+         count_zero_sumsubarray ans = new count_zero_sumsubarray();
+         int arr[] ={2,8,-3,-5,2,-4,6,1,2,1,-3,4};
+         int n = arr.length;
+         System.out.println(ans.countOn(arr, n));
+         System.out.println(ans.countOn2(arr, n));
+         System.out.println(ans.countOn3(arr, n));
     }
 }
