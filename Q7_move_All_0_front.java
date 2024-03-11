@@ -20,7 +20,7 @@ class Solutionxy {
     }
 }
 
-public class move_All_0_front {
+public class Q7_move_All_0_front {
     public static void main(String[] args) {
         Solution s = new Solution();
 

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Segregate_0sand1s {
+public class Q9_Segregate_0sand1s {
     public static void main(String[] args) {
         int arr[] = { 0,2,1,2,0 };
 

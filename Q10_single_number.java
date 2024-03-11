@@ -1,4 +1,4 @@
-public class single_number {
+public class Q10_single_number {
     public static void main(String[] args) {
         //xor operation 
         /*

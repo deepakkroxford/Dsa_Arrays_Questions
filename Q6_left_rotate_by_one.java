@@ -1,4 +1,4 @@
-public class left_rotate_by_one {
+public class Q6_left_rotate_by_one {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
         int temp = arr[0];
