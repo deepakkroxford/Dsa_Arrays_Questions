@@ -31,8 +31,5 @@ class Solutionx {
         return sumn - sum;
     }
 
-    public char[] uniqueOccurrences(int[] arr) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'uniqueOccurrences'");
-    }
+    
 }
