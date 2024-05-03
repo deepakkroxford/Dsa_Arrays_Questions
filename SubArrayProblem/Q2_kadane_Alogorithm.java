@@ -2,29 +2,24 @@ package SubArrayProblem;
 
 class bruteforce {
 
-    long maxSubarraySumON3(int arr[], int n){
+    long maxSubarraySumON3(int arr[], int n) {
         int maxsum = arr[0];
-        for(int i =0;i<n;i++)
-        {
-          
-          for(int j = i;j<n;j++)
-          {
-           int currentsum = 0;
-              for(int k=i;k<=j;k++)
-              {
-               currentsum+=arr[k];
-               maxsum = Math.max(maxsum,currentsum);
-              }
+        for (int i = 0; i < n; i++) {
 
-              currentsum=0;
-          }
-          
+            for (int j = i; j < n; j++) {
+                int currentsum = 0;
+                for (int k = i; k <= j; k++) {
+                    currentsum += arr[k];
+                    maxsum = Math.max(maxsum, currentsum);
+                }
+
+                currentsum = 0;
+            }
+
         }
-  
-  
-  
-          return maxsum;
-      }
+
+        return maxsum;
+    }
 
     long maxSubarraySumON2(int arr[], int n) {
         int maxsum = arr[0];
@@ -48,13 +43,12 @@ class bruteforce {
         int maxsum = arr[0];
         int currentsum = 0;
         for (int i = 0; i < n; i++) {
-            currentsum +=arr[i];
-            
-            maxsum = Math.max(currentsum,maxsum);
+            currentsum += arr[i];
 
-            if(currentsum<0)
-            {
-                currentsum=0;
+            maxsum = Math.max(currentsum, maxsum);
+
+            if (currentsum < 0) {
+                currentsum = 0;
             }
         }
 

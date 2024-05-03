@@ -1,4 +1,4 @@
-public class Missing_and_repeating {
+public class Q14_Missing_and_repeating {
     public static void main(String[] args) {
 
         /*

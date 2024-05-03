@@ -55,7 +55,7 @@ class sortred_array_square {
 
 }
 
-public class Squares_of_a_Sorted_Array {
+public class Q13_Squares_of_a_Sorted_Array {
     public static void main(String[] args) {
         /*
          * Given an integer array nums sorted in non-decreasing order, return an array

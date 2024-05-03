@@ -28,6 +28,11 @@ class Solution {
 
     }
 
+    public void moveZeroes(int[] arr) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'moveZeroes'");
+    }
+
 }
 
 /*

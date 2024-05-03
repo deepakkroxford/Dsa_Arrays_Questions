@@ -12,7 +12,9 @@ class countPair{
             for(int j=0;j<n;j++)
             {
                 map.add(mat1[i][j]);
+        
             }
+           
         }
 
         for(int i =0;i<n;i++)
@@ -53,8 +55,9 @@ public class count_pair_sum_in_matrices {
          * OUTPUT: 4
          * Explanation: The pairs whose sum is found to be 21 are (1, 20), (5, 16), (8,
          * 13), (11, 10).
-         * Example 2:
          * 
+         * Example 2:
+
          * Input:
          * n = 2, x = 10
          * mat1 = {{1, 2},
