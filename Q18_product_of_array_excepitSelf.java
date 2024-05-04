@@ -56,5 +56,13 @@ public class Q18_product_of_array_excepitSelf {
          * The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit
          * integer. *
          */
+        productExceptSelf ans = new productExceptSelf();
+        int nums [] ={1,2,3,4};
+         
+
+
+
+
+
     }
 }

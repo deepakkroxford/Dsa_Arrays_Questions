@@ -45,25 +45,22 @@ public class Q3_Maximum_sum_of_subarray_K {
          * Max = 90
          * 
          */
-        ArrayList <Integer> ans = new ArrayList<>();
-         int arr[] ={8, 5, 10, 7, 9, 4, 15, 12, 90, 13};
+        ArrayList<Integer> ans = new ArrayList<>();
+        int arr[] = { 8, 5, 10, 7, 9, 4, 15, 12, 90, 13 };
         int k = 4;
-        int i =0;
-        int j =i;
-        int sum =0;
-       while(i<=arr.length-k)
-       {
-        
-       
-            while(i<=arr.length && j<k+i)
-            {
-                
+        int i = 0;
+        int j = i;
+        int sum = 0;
+        while (i <= arr.length - k) {
+
+            while (i <= arr.length && j < k + i) {
+
                 j++;
             }
             ans.add(sum);
-            sum =0;
+            sum = 0;
             i++;
-       }
+        }
         System.out.println(ans);
     }
 

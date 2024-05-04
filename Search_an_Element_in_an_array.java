@@ -13,7 +13,7 @@ present at index 2, output is 2.
  */
 
 //geeks for geeks
-class Solution {
+class Solutionx {
 
     static int search(int arr[], int N, int X) {
 

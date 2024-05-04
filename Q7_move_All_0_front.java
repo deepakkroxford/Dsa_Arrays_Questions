@@ -22,7 +22,7 @@ class Solutionxy {
 
 public class Q7_move_All_0_front {
     public static void main(String[] args) {
-        Solution s = new Solution();
+        Solutionxy s = new Solutionxy();
 
         int arr[]={0,1,0,2,3,12};
         s.moveZeroes(arr);

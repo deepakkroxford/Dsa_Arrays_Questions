@@ -4,7 +4,7 @@
 // Cumulative Sum: [1, 3, 6, 10]
 
 //leetcode java answer
-class Solution {
+class Solutionr {
     public int[] runningSum(int[] nums) {
        for(int i=1;i<nums.length;i++)
        {
