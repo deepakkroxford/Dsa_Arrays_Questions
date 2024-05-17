@@ -1,5 +1,4 @@
 package SubArrayProblem;
-import java.util.Scanner;
 public class Q1_Sub_arrayprinting {
     public static void main(String[] args) {
         

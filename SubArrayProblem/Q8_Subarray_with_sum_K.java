@@ -85,8 +85,8 @@ public class Q8_Subarray_with_sum_K {
          */
 
          subarraysumK ans = new subarraysumK();
-         int arr[]={0 ,0, 5, 5, 0, 0};
-         int k =0;
+         int arr[]={10 , 2, -2, -20, 10};
+         int k =-10;
          System.out.println("subarray with sum k is "+ans.subarraywithsum_K_ON2(arr,k));
          System.out.println("subarray with sum k is "+ans.subarraywithsum_K_ON(arr,k));
     }

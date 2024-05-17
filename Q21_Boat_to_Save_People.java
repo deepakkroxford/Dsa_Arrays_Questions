@@ -3,32 +3,28 @@ import java.util.Arrays;
 /**
  * Q21_Boat_to_Save_People
  */
-
- class Boat {
+class Boat {
     public int numRescueBoats(int[] people, int limit) {
-        int count =0;
+        int count = 0;
         Arrays.sort(people);
-        int i =0;
-        int j =people.length-1;
-        
-        while(i<=j)
-        {
-            if((people[i]+people[j])<=limit)
-            {
+        int i = 0;
+        int j = people.length - 1;
+
+        while (i <= j) {
+            if ((people[i] + people[j]) <= limit) {
                 count++;
-                i++;j--;
-            }
-            else 
-            {
+                i++;
+                j--;
+            } else {
                 count++;
                 j--;
             }
         }
-        return count ;
-
+        return count;
 
     }
 }
+
 public class Q21_Boat_to_Save_People {
 
     public static void main(String[] args) {
@@ -66,11 +62,10 @@ public class Q21_Boat_to_Save_People {
          * 
          */
 
-         Boat Ob = new Boat();
-         int[] people = {3,2,2,1};
-         int  limit = 3;
-         System.out.println(Ob.numRescueBoats(people, limit));
-        
+        Boat Ob = new Boat();
+        int[] people = { 3, 2, 2, 1 };
+        int limit = 3;
+        System.out.println(Ob.numRescueBoats(people, limit));
 
     }
 }

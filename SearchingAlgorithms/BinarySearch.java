@@ -23,31 +23,21 @@ public class BinarySearch {
          * exhausted.
          * 
          */
-        int arr[] ={2, 5, 8, 12, 16, 23, 38, 56, 72, 91}; 
+        int arr[] = { 2, 5, 8, 12, 16, 23, 38, 56, 72, 91 };
         int low = 0;
-        int high=arr.length-1;
-        int key =23;
-        while(low<high)
-        {
-            int mid = (low+high)/2;
-            if(arr[mid]==key)
-            {
-                System.out.println("the element is found--> "  +mid);
+        int high = arr.length - 1;
+        int key = 23;
+        while (low < high) {
+            int mid = (low + high) / 2;
+            if (arr[mid] == key) {
+                System.out.println("the element is found--> " + mid);
                 break;
-            }
-            else if(key<arr[mid])
-            {
-                high=mid-1;
-            }
-            else
-            {
-                low= mid+1;
+            } else if (key < arr[mid]) {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
             }
         }
-
-
-
-
 
     }
 }

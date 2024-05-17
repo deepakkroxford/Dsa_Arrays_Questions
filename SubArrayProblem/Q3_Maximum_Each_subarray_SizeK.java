@@ -2,7 +2,27 @@ package SubArrayProblem;
 
 import java.util.ArrayList;
 
-public class Q3_Maximum_sum_of_subarray_K {
+class maximum_of_each_subarray_of_size_k {
+    // Function to find .
+     ArrayList<Integer> max_of_subarrays(int arr[], int n, int k) {
+        ArrayList<Integer> ans = new ArrayList<>();
+        for (int i = 0; i <= n - k; i++) {
+            int max = 0;
+            int currentmax = 0;
+            for (int j = i; j < k + i; j++) {
+                currentmax = arr[j];
+                max = Math.max(max, currentmax);
+            }
+            ans.add(max);
+            max = 0;
+
+        }
+        return ans;
+
+    }
+}
+
+public class Q3_Maximum_Each_subarray_SizeK {
     public static void main(String[] args) {
         /*
          * Given an array arr[] of size N and an integer K. Find the maximum for each
@@ -45,23 +65,13 @@ public class Q3_Maximum_sum_of_subarray_K {
          * Max = 90
          * 
          */
-        ArrayList<Integer> ans = new ArrayList<>();
+       maximum_of_each_subarray_of_size_k ans = new maximum_of_each_subarray_of_size_k();
         int arr[] = { 8, 5, 10, 7, 9, 4, 15, 12, 90, 13 };
-        int k = 4;
-        int i = 0;
-        int j = i;
-        int sum = 0;
-        while (i <= arr.length - k) {
-
-            while (i <= arr.length && j < k + i) {
-
-                j++;
-            }
-            ans.add(sum);
-            sum = 0;
-            i++;
-        }
-        System.out.println(ans);
+        int k=4;
+        int n =arr.length;
+        System.out.println(ans.max_of_subarrays(arr, n, k));
+        
+       
     }
 
 }
