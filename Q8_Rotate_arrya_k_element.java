@@ -1,4 +1,27 @@
-import java.util.Scanner;
+class rotate {
+    public void rotatedk(int nums[], int k) {
+        k = k % nums.length;
+        // reverse the whole array
+        reverse(nums, 0, nums.length - 1);
+
+        // reverse the first k elemnt
+        reverse(nums, 0, k - 1);
+
+        // reverse the remaing element
+
+        reverse(nums, k, nums.length - 1);
+    }
+
+    protected void reverse(int nums[], int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }
+}
 
 public class Q8_Rotate_arrya_k_element {
 
@@ -24,30 +47,43 @@ public class Q8_Rotate_arrya_k_element {
      * when rotated by 3 elements, it becomes
      * 8 10 12 14 16 18 20 2 4 6.
      */
+
     public static void main(String[] args) {
-        int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
-        int n = arr.length;
-        int dtimes = 17;
-        dtimes = dtimes % n;
-        int temp[] = new int[dtimes];
-        for (int i = 0; i < dtimes; i++) {
-            // so actuallly we store the array element that we have to rotate
-            temp[i] = arr[i];
-        }
-        for (int i = dtimes; i < n; i++) {
-            // this logic actuly shift the array
-            arr[i - dtimes] = arr[i];
-        }
-        int j = 0;
-        for (int i = n - dtimes; i < n; i++) {
-            // this logic put the elemnt at the end to the array
-            // and it provide the actual output
-            arr[i] = temp[j];
-            j++;
+        int nums[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+        int n = nums.length;
+        int k = 4;
+
+        rotate rotator = new rotate();
+        rotator.rotatedk(nums, k);
+
+        System.out.print("Rotated arrays: ");
+        for (int num : nums) {
+            System.out.print(num + " ");
         }
 
+        // Ensure k is within the bounds of the array length
+        k = k % n;
+
+        // Create a temporary array to store the last k elements
+        int[] temp = new int[k];
+        for (int i = 0; i < k; i++) {
+            temp[i] = nums[n - k + i];
+        }
+
+        // Shift the remaining elements to the right
+        for (int i = n - 1; i >= k; i--) {
+            nums[i] = nums[i - k];
+        }
+
+        // Place the k elements from the temporary array at the beginning
+        for (int i = 0; i < k; i++) {
+            nums[i] = temp[i];
+        }
+
+        // Print the rotated array
+        System.out.println("Rotated array:");
         for (int i = 0; i < n; i++) {
-            System.out.println(arr[i]);
+            System.out.print(nums[i] + " ");
         }
 
     }
