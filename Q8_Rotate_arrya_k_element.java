@@ -1,17 +1,13 @@
 class rotate {
     public void rotatedk(int nums[], int k) {
-        k = k % nums.length;
+           k = k % nums.length;
         // reverse the whole array
         reverse(nums, 0, nums.length - 1);
-
         // reverse the first k elemnt
         reverse(nums, 0, k - 1);
-
         // reverse the remaing element
-
         reverse(nums, k, nums.length - 1);
     }
-
     protected void reverse(int nums[], int start, int end) {
         while (start < end) {
             int temp = nums[start];

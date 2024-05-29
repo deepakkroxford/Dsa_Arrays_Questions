@@ -1,5 +1,4 @@
 package SubArrayProblem;
-
 class BruteToOptimal {
     int maxProducttON3(int[] arr) {
         int maxproduct = arr[0];
