@@ -2,7 +2,7 @@ package SubArrayProblem;
 
 class Solution {
 
-    public static int smallestSubWithSum(int a[], int n, int x) {
+    public  int smallestSubWithSum(int a[], int n, int x) {
         int minLen = Integer.MAX_VALUE;
         int sum = 0;
         int start = 0;
@@ -66,7 +66,7 @@ public class Q14_Smallest_subarray_sum_greater_than_x {
 
         class Solution {
 
-            public static int smallestSubWithSum(int a[], int n, int x) {
+            public  int smallestSubWithSum(int a[], int n, int x) {
                 int minlen = Integer.MAX_VALUE; // Initialize to Integer.MAX_VALUE to handle edge cases
                 for (int i = 0; i < n; i++) {
                     int sum = 0;

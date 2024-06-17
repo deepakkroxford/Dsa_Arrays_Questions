@@ -26,7 +26,8 @@ class sumofsquare {
 public class Q11_Sum_of_Square {
 
     public static void main(String[] args) {
-        /*
+        /*Leetcode ->633 
+          https://leetcode.com/problems/sum-of-square-numbers/?envType=daily-question&envId=2024-06-17
          * Given a non-negative integer c, decide whether there're two integers a and b
          * such that a^2 + b^2 = c.
          * 

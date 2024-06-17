@@ -19,8 +19,8 @@ public class Q3_Sum_Two_Array {
             a2[i] = sc.nextInt();
         }
 
-        int sum[] = new int[n1 > n2 ? n1 : n2];
 
+        int sum[] = new int[n1 > n2 ? n1 : n2];
         int carry = 0;
         int i = a1.length - 1;
         int j = a2.length - 1;
