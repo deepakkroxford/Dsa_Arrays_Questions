@@ -64,23 +64,23 @@ public class Q14_Smallest_subarray_sum_greater_than_x {
 
         // User function Template for Java
 
-        class Solution {
+        // class Solution {
 
-            public  int smallestSubWithSum(int a[], int n, int x) {
-                int minlen = Integer.MAX_VALUE; // Initialize to Integer.MAX_VALUE to handle edge cases
-                for (int i = 0; i < n; i++) {
-                    int sum = 0;
-                    for (int j = i; j < n; j++) {
-                        sum += a[j];
-                        if (sum > x) {
-                            minlen = Math.min(minlen, j - i + 1);
-                            break; // Once sum>x is found, no need to continue with this subarray
-                        }
-                    }
-                }
-                return (minlen == Integer.MAX_VALUE) ? 0 : minlen; // Return 0 if no such subarray is found
-            }
-        }
+        //     public  int smallestSubWithSum(int a[], int n, int x) {
+        //         int minlen = Integer.MAX_VALUE; // Initialize to Integer.MAX_VALUE to handle edge cases
+        //         for (int i = 0; i < n; i++) {
+        //             int sum = 0;
+        //             for (int j = i; j < n; j++) {
+        //                 sum += a[j];
+        //                 if (sum > x) {
+        //                     minlen = Math.min(minlen, j - i + 1);
+        //                     break; // Once sum>x is found, no need to continue with this subarray
+        //                 }
+        //             }
+        //         }
+        //         return (minlen == Integer.MAX_VALUE) ? 0 : minlen; // Return 0 if no such subarray is found
+        //     }
+        // }
 
     }
 }

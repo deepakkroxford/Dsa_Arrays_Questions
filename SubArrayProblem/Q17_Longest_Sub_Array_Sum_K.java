@@ -6,6 +6,7 @@ import java.util.HashMap;
  * InnerQ17_Longest_Sub_Array_Sum_K
  */
 class Longest_Sub_Array_Sum_K {
+    //method is static we can directly call with the name with class
     public static int lenOfLongSubarr(int A[], int N, int k) {
         // Complete the function
         int sum = 0;
@@ -70,7 +71,7 @@ public class Q17_Longest_Sub_Array_Sum_K {
          * -105<=A[i], K<=105
          * 
          */
-        Longest_Sub_Array_Sum_K ans = new Longest_Sub_Array_Sum_K();
+
         int A[] = { 10, 5, 2, 7, 1, 9 };
         int n = A.length;
         int k = 15;
