@@ -49,7 +49,7 @@ public class Q3_Sum_Two_Array {
             System.out.print(carry);
         }
         for (int x : sum) {
-            System.out.print(x);
+            System.out.print(" "+x);
         }
 
     }

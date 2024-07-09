@@ -1,3 +1,29 @@
+class s {
+
+	public static int arrayEquilibriumIndex(int[] arr){  
+		//Your code goes here
+
+		int sum=0;
+		for(int i=0;i<arr.length;i++)
+		{
+			sum = sum +arr[i];
+		}
+		int l =0;
+		int r=sum;
+		for(int i =0;i<arr.length;i++)
+		{
+			r= r-arr[i];
+			if(l==r)
+			{
+				return i;
+			}
+			l=l+arr[i];
+		}
+		return -1;
+	}
+}
+
+
 public class Equilibrium_Index {
     public static void main(String[] args) {
         /*
@@ -47,30 +73,6 @@ public class Equilibrium_Index {
 
          //solution
          
- class s {
-
-	public static int arrayEquilibriumIndex(int[] arr){  
-		//Your code goes here
-
-		int sum=0;
-		for(int i=0;i<arr.length;i++)
-		{
-			sum = sum +arr[i];
-		}
-		int l =0;
-		int r=sum;
-		for(int i =0;i<arr.length;i++)
-		{
-			r= r-arr[i];
-			if(l==r)
-			{
-				return i;
-			}
-			l=l+arr[i];
-		}
-		return -1;
-	}
-}
-
+ 
     }
 }

@@ -2,9 +2,9 @@ import java.util.Scanner;;
 
 public class checkPrime_Number {
     public static void main(String[] args) {
-        Scanner soc = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         System.out.println("enter the value of n");
-        int N = soc.nextInt();
+        int N = s.nextInt();
         int count = 0;
 
         if (N <= 1) {

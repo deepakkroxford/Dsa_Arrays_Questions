@@ -1,5 +1,5 @@
 class productExceptSelf {
-    public int[] productExceptSelf(int[] nums) {
+    public int[] productExceptself(int[] nums) {
         int n = nums.length;
         int prefix[] = new int[n];
         prefix[0] = 1;
@@ -57,12 +57,11 @@ public class Q18_product_of_array_excepitSelf {
          * integer. *
          */
         productExceptSelf ans = new productExceptSelf();
-        int nums [] ={1,2,3,4};
-         
-
-
-
-
+        int nums[] = { 1, 2, 3, 4 };
+        int anss[] = ans.productExceptself(nums);
+        for (int i = 0; i < anss.length; i++) {
+            System.out.println(anss[i]);
+        }
 
     }
 }

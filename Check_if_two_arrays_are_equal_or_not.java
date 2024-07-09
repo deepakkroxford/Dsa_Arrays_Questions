@@ -9,7 +9,7 @@ public class Check_if_two_arrays_are_equal_or_not {
     public static void main(String[] args) {
         int a[] = { 1, 2, 5, 4, 0 };
         int b[] = { 2, 4, 5, 0, 1 };
-        int N = a.length;
+     
         // time complexity 0(nlogn) so this technique is not optimize
         Arrays.sort(a);
         Arrays.sort(b);
