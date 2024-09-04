@@ -45,9 +45,17 @@ public class Q8_Rotate_arrya_k_element {
      */
 
     public static void main(String[] args) {
+
+
+        /*
+         * there are three step that we have to follw
+         * step1 : reverse the whole array  0->n-1;
+         * step2 : reverse the first k array  0->to k-1
+         * step 3: reverse the array from k to last -> k->n-1;
+         */
         int nums[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
         int n = nums.length;
-        int k = 4;
+        int k = 4%n;
 
         rotate rotator = new rotate();
         rotator.rotatedk(nums, k);
@@ -57,30 +65,38 @@ public class Q8_Rotate_arrya_k_element {
             System.out.print(num + " ");
         }
 
-        // Ensure k is within the bounds of the array length
-        k = k % n;
 
-        // Create a temporary array to store the last k elements
-        int[] temp = new int[k];
-        for (int i = 0; i < k; i++) {
-            temp[i] = nums[n - k + i];
-        }
 
-        // Shift the remaining elements to the right
-        for (int i = n - 1; i >= k; i--) {
-            nums[i] = nums[i - k];
-        }
 
-        // Place the k elements from the temporary array at the beginning
-        for (int i = 0; i < k; i++) {
-            nums[i] = temp[i];
-        }
 
-        // Print the rotated array
-        System.out.println("Rotated array:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(nums[i] + " ");
-        }
+
+
+
+
+        // // Ensure k is within the bounds of the array length
+        // k = k % n;
+
+        // // Create a temporary array to store the last k elements
+        // int[] temp = new int[k];
+        // for (int i = 0; i < k; i++) {
+        //     temp[i] = nums[n - k + i];
+        // }
+
+        // // Shift the remaining elements to the right
+        // for (int i = n - 1; i >= k; i--) {
+        //     nums[i] = nums[i - k];
+        // }
+
+        // // Place the k elements from the temporary array at the beginning
+        // for (int i = 0; i < k; i++) {
+        //     nums[i] = temp[i];
+        // }
+
+        // // Print the rotated array
+        // System.out.println("Rotated array:");
+        // for (int i = 0; i < n; i++) {
+        //     System.out.print(nums[i] + " ");
+        // }
 
     }
 }
