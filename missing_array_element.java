@@ -15,21 +15,3 @@ public class missing_array_element{
         System.out.println("the missing element in array is "+(sumn-sum));
     }
 }
-
-
-
-class Solutionx {
-    int missingNumber(int array[], int n) {
-        // first we have to find the sum of n number
-        int sumn = n * (n + 1) / 2;
-        int sum = 0;
-        //then we find sum of the given array element 
-        for (int i = 0; i < array.length; i++) {
-            sum = sum + array[i];
-        }
-        //then after subtract from sum of n number and sum of array element
-        return sumn - sum;
-    }
-
-    
-}
