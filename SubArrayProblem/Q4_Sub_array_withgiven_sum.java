@@ -27,6 +27,18 @@ class brutetooptimal {
 
     ArrayList<Integer> subarraySumON(int[] arr, int n, int s){
         ArrayList<Integer> ans = new ArrayList<>();
+        
+
+
+
+
+
+
+
+
+
+
+
         return ans;
     }
 

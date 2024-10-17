@@ -68,5 +68,8 @@ public class Q29_Stock_Sell {
 
          int arr2 []={7,6,4,3,1};
          System.out.println(stock.maxProfitOn(arr2));
+
+
+         
     }
 }
