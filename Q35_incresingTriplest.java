@@ -38,7 +38,8 @@ public class Q35_incresingTriplest {
     public static void main(String[] args) {
         /*
          * LeetCode :-334. Increasing Triplet Subsequence
-         * https://leetcode.com/problems/increasing-triplet-subsequence/description/?envType=study-plan-v2&envId=leetcode-75
+         * https://leetcode.com/problems/increasing-triplet-subsequence/description/?
+         * envType=study-plan-v2&envId=leetcode-75
          * Solved
          * Medium
          * 
@@ -74,13 +75,12 @@ public class Q35_incresingTriplest {
          * -231 <= nums[i] <= 231 - 1
          * 
          */
-        Q35_incresingTriplest obj  = new Q35_incresingTriplest();
+        Q35_incresingTriplest obj = new Q35_incresingTriplest();
 
-         int arr[] = {2,1,5,0,4,6};
+        int arr[] = { 2, 1, 5, 0, 4, 6 };
 
-         System.out.println(obj.increasingTripletOn(arr));
-         System.out.println(obj.increasingTriplet(arr));
-
+        System.out.println(obj.increasingTripletOn(arr));
+        System.out.println(obj.increasingTriplet(arr));
 
     }
 }
