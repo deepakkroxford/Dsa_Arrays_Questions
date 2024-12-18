@@ -3,6 +3,22 @@ package SearchingAlgorithms;
 import java.util.Arrays;
 
 public class AgressiveCow {
+   boolean isCowfits (int stalls[], int k, int minDis)
+  {
+    int cow =1;
+    int lastPos = stalls[0];
+    for(int i =1; i<stalls.length; i++)
+    {
+      if(stalls[i] - lastPos >= minDis)
+      {
+        cow++;
+        lastPos = stalls[i];
+      }
+      if(cow == k)
+        return true;
+    }
+    return false;
+  }
 
     public int aggressiveCows(int[] stalls, int k) {
         /*
@@ -23,7 +39,18 @@ public class AgressiveCow {
           /*
            * Step 2: writing the logic for the binary search
            */
+            while (low<=high) {
+              int mid = low + (high - low)/2;
 
+              if(isCowfits(stalls,k,mid))
+              {
+                ans = mid;
+                low = mid + 1;
+              }
+              else{
+                high = mid - 1;
+              }
+            }
 
 
 
@@ -61,5 +88,11 @@ public class AgressiveCow {
          * The minimum distance between cows, in this case, is 1, which also is the
          * largest among all possible ways.
          */
+
+         int[] stalls = {1, 2, 4, 8, 9};
+         int k = 3;
+         AgressiveCow obj = new AgressiveCow();
+         System.out.println(obj.aggressiveCows(stalls, k)); // 3
+         
     }
 }
