@@ -1,4 +1,5 @@
 package Matrix_DSA_Problem;
+
 import java.util.Scanner;
 
 /*
@@ -32,33 +33,34 @@ Sum of these elements is 6+1+2+7+9+7= 32.
  */
 public class triangleSum_of_upper_and_lower_triangles {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter the value of n");
-        int n = sc.nextInt();
-        System.out.println("enter the element ");
-        int arr[][] = new int[n][n];
-        int uppersum = 0;
-        int lowersum = 0;
-        for (int i = 0; i < n; i++) {
+               try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("enter the value of n");
+            int n = sc.nextInt();
+            System.out.println("enter the element ");
+            int arr[][] = new int[n][n];
+            int uppersum = 0;
+            int lowersum = 0;
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    arr[i][j] = sc.nextInt();
+                }
+            }
+        
+            // System.out.println("upper");
             for (int j = 0; j < n; j++) {
-                arr[i][j] = sc.nextInt();
+                for (int i = 0; i < j + 1; i++) {
+                    uppersum += arr[i][j];
+                }
             }
-        }
-
-        // System.out.println("upper");
-        for (int j = 0; j < n; j++) {
-            for (int i = 0; i < j + 1; i++) {
-                uppersum += arr[i][j];
+            // System.out.println("lower");
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j <= i; j++) {
+                    lowersum += arr[i][j];
+                }
             }
+            System.out.println("upper" + uppersum);
+            System.out.println("lower" + lowersum);
         }
-        // System.out.println("lower");
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j <= i; j++) {
-                lowersum += arr[i][j];
-            }
-        }
-        System.out.println("upper" + uppersum);
-        System.out.println("lower" + lowersum);
 
     }
 }
