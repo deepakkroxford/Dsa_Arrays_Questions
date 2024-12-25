@@ -1,6 +1,6 @@
-package SearchingAlgorithms;
+package BinarySearch;
 
-public class Find_Smallest_k_MissingNumber {
+public class Q3Find_Smallest_k_MissingNumber {
     public int kthMissing(int[] arr, int k) {
         // Time complexity is O(n)
         for (int i = 0; i < arr.length; i++) {
@@ -32,7 +32,7 @@ public class Find_Smallest_k_MissingNumber {
     public static void main(String[] args) {
 
         // Test the function
-        Find_Smallest_k_MissingNumber obj = new Find_Smallest_k_MissingNumber();
+        Q3Find_Smallest_k_MissingNumber obj = new Q3Find_Smallest_k_MissingNumber();
         int[] arr = { 2, 3, 4, 7, 11 };
         int k = 5;
         System.out.println("the kth smalles missing number is :- " + obj.kthMissing(arr, k)); // Output: 9

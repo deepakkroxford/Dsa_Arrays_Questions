@@ -1,4 +1,4 @@
-package SearchingAlgorithms;
+package BinarySearch;
 
 class Solution {
     public  static int search(int[] nums, int target) {
@@ -30,7 +30,7 @@ class Solution {
     }
 }
 
-public class SearchInRotatedArray {
+public class Q8SearchInRotatedArray {
     public static void main(String[] args) {
         /*
          * https://leetcode.com/problems/search-in-rotated-sorted-array/description/

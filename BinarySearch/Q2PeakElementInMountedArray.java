@@ -1,6 +1,6 @@
-package SearchingAlgorithms;
+package BinarySearch;
 
-public class PeakElementInMountedArray {
+public class Q2PeakElementInMountedArray {
 
     public int findPeakElement(int[] arr) {
         /*
@@ -65,7 +65,7 @@ public class PeakElementInMountedArray {
          */
 
          int arr[] = {1,2,1,3,5,6,4};
-         PeakElementInMountedArray obj = new PeakElementInMountedArray();
+         Q2PeakElementInMountedArray obj = new Q2PeakElementInMountedArray();
          int ans = obj.findPeakElement(arr);
          System.out.println(ans);
          int ans1 = obj.findPeakUsingBinarySearch(arr);

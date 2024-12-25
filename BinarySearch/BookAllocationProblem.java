@@ -1,4 +1,4 @@
-package SearchingAlgorithms;
+package BinarySearch;
 
 public class BookAllocationProblem {
     public static boolean isValid(int[] arr, int k, int maxAllowedPage) {

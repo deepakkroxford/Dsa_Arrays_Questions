@@ -1,6 +1,6 @@
-package SearchingAlgorithms;
+package BinarySearch;
 
-public class MinimunInRoatedArrayII {
+public class Q5MinimunInRoatedArrayII {
     public int findMin(int[] nums) {
         int low = 0;
         int high = nums.length - 1;
@@ -59,7 +59,7 @@ public class MinimunInRoatedArrayII {
          */
 
          // Your code here
-         MinimunInRoatedArrayII ans = new MinimunInRoatedArrayII();
+         Q5MinimunInRoatedArrayII ans = new Q5MinimunInRoatedArrayII();
          int nums[] = { 3,3,1,3 };
          System.out.println(ans.findMin(nums));
     }

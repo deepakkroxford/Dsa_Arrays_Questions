@@ -1,6 +1,6 @@
-package SearchingAlgorithms;
+package BinarySearch;
 
-public class MinimunInRoatedArray {
+public class Q4MinimunInRoatedArray {
     public int findMin(int[] arr) {
         int low =0;
         int high = arr.length-1;
@@ -62,7 +62,7 @@ public class MinimunInRoatedArray {
          * nums is sorted and rotated between 1 and n times.
          */
 
-         MinimunInRoatedArray min = new MinimunInRoatedArray();
+         Q4MinimunInRoatedArray min = new Q4MinimunInRoatedArray();
          int nums[] = {4,5,6,7,0,1,2};
          System.out.println(min.findMin(nums));
 

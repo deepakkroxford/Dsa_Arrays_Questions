@@ -40,22 +40,20 @@ public class SpiralMatrix {
             right--;
 
             // right to left
-            if(top<=bottom){
-            for (int i = right; i >= left; i--) {
-                result.add(matrix[bottom][i]);
+            if (top <= bottom) {
+                for (int i = right; i >= left; i--) {
+                    result.add(matrix[bottom][i]);
+                }
+                bottom--;
             }
-            bottom--;
-            }
-           
 
             // bottom to top
-            if(left<=right)
-            {
-            for (int i = bottom; i >= top; i--) {
-                result.add(matrix[i][left]);
+            if (left <= right) {
+                for (int i = bottom; i >= top; i--) {
+                    result.add(matrix[i][left]);
+                }
+                left++;
             }
-            left++;
-        }
         }
 
         return result;
@@ -63,11 +61,10 @@ public class SpiralMatrix {
     }
 
     public static void main(String[] args) {
-
+        
         int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
         SpiralMatrix spiralMatrix = new SpiralMatrix();
         List<Integer> result = spiralMatrix.spiralOrder(matrix);
         System.out.println(result); // Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
-
     }
 }

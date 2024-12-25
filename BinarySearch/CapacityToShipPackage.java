@@ -1,4 +1,4 @@
-package SearchingAlgorithms;
+package BinarySearch;
 
 public class CapacityToShipPackage {
     boolean isValid(int[] weights, int days, int minAllowed) {
