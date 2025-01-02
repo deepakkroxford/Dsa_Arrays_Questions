@@ -11,12 +11,12 @@ class finding4sum {
         for (int i = 0; i < arr.length - 3; i++) {
 
             for (int j = i + 1; j < arr.length - 2; j++) {
-                int sum = 0;
+                long sum = 0;
                 int left = i + 1;
                 int right = arr.length - 1;
 
                 while (left < right) {
-                    sum = arr[i] + arr[j] + arr[left] + arr[right];
+                    sum = (long) arr[i] + arr[j] + arr[left] + arr[right];
                     if (sum == target) {
                         result.add(Arrays.asList(arr[i], arr[j], arr[left], arr[right]));
                         left++;

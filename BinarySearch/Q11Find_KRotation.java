@@ -12,7 +12,7 @@ public class Q11Find_KRotation {
          */
         int low =0;
         int high = arr.length-1;
-        while(low<=high)
+        while(low<high)
         {
 
             int mid = low +(high-low)/2;
@@ -21,10 +21,10 @@ public class Q11Find_KRotation {
                 low = mid+1;
             }
             else{
-                high = mid-1;   
+                high = mid;   
             }
         }
-        return low;
+        return high;
     }
     public static void main(String[] args) {
         /*

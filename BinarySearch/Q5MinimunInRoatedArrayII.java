@@ -1,6 +1,9 @@
 package BinarySearch;
 
 public class Q5MinimunInRoatedArrayII {
+    /*
+     *  In this question it also contains the duplicates element so we have to also manage this secaniro 
+     */
     public int findMin(int[] nums) {
         int low = 0;
         int high = nums.length - 1;
