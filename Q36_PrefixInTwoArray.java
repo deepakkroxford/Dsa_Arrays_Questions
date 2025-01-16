@@ -32,7 +32,7 @@ public class Q36_PrefixInTwoArray {
          * if(freq[A[i]]==2)
          * {
          * count ++;
-         * }
+         *} 
          * freq[B[i]]++;
          * if(freq[B[i]]==2)
          * {
