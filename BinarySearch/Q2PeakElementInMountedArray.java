@@ -9,33 +9,34 @@ public class Q2PeakElementInMountedArray {
          */
         int peak = 0;
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i]>peak) peak = arr[i];
+            if (arr[i] > peak)
+                peak = arr[i];
         }
         return peak;
     }
 
-    public int findPeakUsingBinarySearch(int arr[])
-    {
+    public int findPeakUsingBinarySearch(int arr[]) {
         int low = 0;
         int high = arr.length - 1;
 
         while (low < high) {
-            int mid = low +(high-low)/2;
-            if(arr[mid]>arr[mid+1]) 
-            {
+            int mid = low + (high - low) / 2;
+            if (arr[mid] > arr[mid + 1]) {
                 high = mid;
-            }
-            else {
-                low = mid+1;
+            } else {
+                low = mid + 1;
             }
         }
         return arr[high];
-       
-    }
 
+    }
 
     public static void main(String[] args) {
         /*
+         * leetcode :- 162. Find Peak Element
+         * https://leetcode.com/problems/find-peak-element/description/
+         * 
+         * 
          * A peak element is an element that is strictly greater than its neighbors.
          * 
          * Given a 0-indexed integer array nums, find a peak element, and return its
@@ -64,12 +65,12 @@ public class Q2PeakElementInMountedArray {
          * element is 2, or index number 5 where the peak element is 6.
          */
 
-         int arr[] = {1,2,1,3,5,6,4};
-         Q2PeakElementInMountedArray obj = new Q2PeakElementInMountedArray();
-         int ans = obj.findPeakElement(arr);
-         System.out.println(ans);
-         int ans1 = obj.findPeakUsingBinarySearch(arr);
-         System.out.println(ans1);
+        int arr[] = { 1, 2, 1, 3, 5, 6, 4 };
+        Q2PeakElementInMountedArray obj = new Q2PeakElementInMountedArray();
+        int ans = obj.findPeakElement(arr);
+        System.out.println(ans);
+        int ans1 = obj.findPeakUsingBinarySearch(arr);
+        System.out.println(ans1);
 
     }
 }

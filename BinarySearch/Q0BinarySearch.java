@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class BinarySearch {
+public class Q0BinarySearch {
     public static void main(String[] args) {
         /*
          * Binary Search is defined as a searching algorithm used in a sorted array by
