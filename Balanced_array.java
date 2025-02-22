@@ -20,7 +20,7 @@ class Solution
     long minValueToBalance(long a[] ,int n)
     {
    int mid = n/2;
-     long sumLeft =0;
+    long sumLeft =0;
     long sumRight=0;
       for(int i=0;i<mid;i++)
       {

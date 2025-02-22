@@ -56,7 +56,7 @@ class bruteforce {
     }
 
 }
-/*
+/* https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1?page=1&sortBy=submissions
  * Given an array Arr[] of N integers.
  * Find the contiguous sub-array(containing at least one number)
  * which has the maximum sum and return its sum.

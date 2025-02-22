@@ -118,7 +118,7 @@ public class Q6_CountZero_sum_Subarray {
 
 
          count_zero_sumsubarray ans = new count_zero_sumsubarray();
-         int arr[] ={2,8,-3,-5,2,-4,6,1,2,1,-3,4};
+         int arr[] ={6,-1,-3,4,-2,2,4,6,-12,-7};
          int n = arr.length;
          System.out.println(ans.countOn(arr, n));
          System.out.println(ans.countOn2(arr, n));
