@@ -6,7 +6,7 @@ public class Q7UpperBound {
         int floor = -1;
         int ceil = -1;
 
-        for (int i=0;i<arr.length;i++) {
+        for (int i = 0; i < arr.length; i++) {
             // Update floor if num <= x and num > current floor
             if (arr[i] <= x && (floor == -1 || arr[i] > floor)) {
                 floor = arr[i];
@@ -17,8 +17,9 @@ public class Q7UpperBound {
             }
         }
 
-        return new int[]{floor, ceil};
+        return new int[] { floor, ceil };
     }
+
     public static void main(String[] args) {
         /*
          * Given an unsorted array arr[] of integers and an integer x, find the floor
@@ -46,17 +47,31 @@ public class Q7UpperBound {
          * Constraints :
          * 1 ≤ arr.size ≤ 105
          * 1 ≤ arr[i], x ≤ 106
+         * 
+         * 
+         * Understanding "Floor" and "Ceiling"
+         * --->Floor of x
+         * The floor of x is the largest element in the array that is less than or equal
+         * to x.
+         * If x is smaller than the smallest number in the array, then there is no
+         * floor, and we return -1.
+         * 
+         * --->Ceiling of x
+         * The ceiling of x is the smallest element in the array that is greater than or
+         * equal to x.
+         * If x is greater than the largest number in the array, then there is no
+         * ceiling, and we return -1.
          */
 
-         Q7UpperBound upperBound = new Q7UpperBound();
-         int x = 7;
-         int[] arr = {5, 6, 8, 9, 6, 5, 5, 6};
-         int[] result = upperBound.getFloorAndCeil(x, arr);
-         System.out.println("Floor: " + result[0] + ", Ceil: " + result[1]);
-         x = 10;
-         arr = new int[]{5, 6, 8, 8, 6, 5, 5, 6};
-         result = upperBound.getFloorAndCeil(x, arr);
-         System.out.println("Floor: " + result[0] + ", Ceil: " + result[1]);
+        Q7UpperBound upperBound = new Q7UpperBound();
+        int x = 7;
+        int[] arr = { 5, 6, 8, 9, 6, 5, 5, 6 };
+        int[] result = upperBound.getFloorAndCeil(x, arr);
+        System.out.println("Floor: " + result[0] + ", Ceil: " + result[1]);
+        x = 10;
+        arr = new int[] { 5, 6, 8, 8, 6, 5, 5, 6 };
+        result = upperBound.getFloorAndCeil(x, arr);
+        System.out.println("Floor: " + result[0] + ", Ceil: " + result[1]);
 
     }
 }

@@ -30,7 +30,7 @@ class Solution {
     }
 }
 
-public class Q8SearchInRotatedArray {
+public class Q8SearchInRotatedArrayI {
     public static void main(String[] args) {
         /*
          * https://leetcode.com/problems/search-in-rotated-sorted-array/description/
