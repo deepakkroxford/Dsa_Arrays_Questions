@@ -2,7 +2,7 @@ package BinarySearch;
 
 import java.util.Arrays;
 
-public class AgressiveCow {
+public class Q14AgressiveCow {
    boolean isCowfits (int stalls[], int k, int minDis)
   {
     int cow =1;
@@ -91,7 +91,7 @@ public class AgressiveCow {
 
          int[] stalls = {1, 2, 4, 8, 9};
          int k = 3;
-         AgressiveCow obj = new AgressiveCow();
+         Q14AgressiveCow obj = new Q14AgressiveCow();
          System.out.println(obj.aggressiveCows(stalls, k)); // 3
          
     }

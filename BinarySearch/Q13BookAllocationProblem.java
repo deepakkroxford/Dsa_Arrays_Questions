@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class BookAllocationProblem {
+public class Q13BookAllocationProblem {
     public static boolean isValid(int[] arr, int k, int maxAllowedPage) {
         int stu = 1; // Start with one student
         int page = 0;
@@ -53,6 +53,44 @@ public class BookAllocationProblem {
             } else {
                 // Increase maxAllowedPage
                 low = mid + 1;
+            }
+        }
+        return ans;
+    }
+
+     public static int findPagesAnotherApporach(int[] arr, int k) {
+        int low = 0,high=0,ans=-1;
+
+        // it means that if the number of students is greater than the number of the books so we have to return the -1;
+        if(k>arr.length) {
+            return ans;
+        }
+        for(int i=0;i<arr.length;i++) {
+            high+=arr[i]; // and setting the highest value we can assing to one student so the sum of all pages.
+            low = Math.max(low, arr[i]); // we are setting the low value  to the maximum number of pages in the book
+        }
+
+        while(low<=high)
+        {
+            int mid = low +(high-low)/2;
+            int page =0, count =1;
+            for(int i=0;i<arr.length;i++)
+            {
+                page += arr[i];
+                // if the page value is greater than the maximum value we can assing to one student then we have to assign the book to the next student
+                if(page+arr[i]>mid)
+                {
+                    count++; // we are increasing the number of students
+                    page = arr[i]; // and setting the page value to the current book value
+                }
+            }
+            if(count<=k) // if the number of students is less than or equal to the given number of students
+            {
+                ans = mid; // then we are setting the ans to the mid value
+                high = mid-1; // and we are decreasing the high value to further minimize the ans
+            }
+            else{
+                low = mid+1; // if the number of students is greater than the given number of students then we have to increase the low value to increase the ans to further minimize the ans.
             }
         }
         return ans;
