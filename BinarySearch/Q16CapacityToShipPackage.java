@@ -1,6 +1,6 @@
 package BinarySearch;
 
-public class CapacityToShipPackage {
+public class Q16CapacityToShipPackage {
     boolean isValid(int[] weights, int days, int minAllowed) {
         int ship = 1; // Number of ships required
         int weight = 0; // Current weight on the ship
@@ -111,7 +111,7 @@ public class CapacityToShipPackage {
 
          int[] weights = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
          int days = 5;
-         CapacityToShipPackage capacityToShipPackage = new CapacityToShipPackage();
+         Q16CapacityToShipPackage capacityToShipPackage = new Q16CapacityToShipPackage();
          System.out.println(capacityToShipPackage.shipWithinDays(weights, days)); // Output: 15
     }
 }

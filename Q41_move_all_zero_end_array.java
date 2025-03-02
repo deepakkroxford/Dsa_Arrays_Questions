@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class move_all_zero_end_array {
+public class Q41_move_all_zero_end_array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
