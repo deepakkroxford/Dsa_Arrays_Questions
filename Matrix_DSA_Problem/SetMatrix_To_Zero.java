@@ -220,6 +220,13 @@ public class SetMatrix_To_Zero {
                 { 1, 3, 1, 5 }
         };
 
+        int[][] matrix2 = {
+
+                { 1, 2, 3 },
+                { 4, 0, 6 },
+                { 7, 8, 9 }
+        };
+
         // Print the matrix before modification
         System.out.println("Original Matrix:");
         printMatrix(matrix);
