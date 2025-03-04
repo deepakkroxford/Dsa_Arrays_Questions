@@ -62,7 +62,7 @@ public class Predict_the_Column {
 
         }
         System.out.println("the column "+ans+ " has more number of zero");
-
+        sc.close();
 
     }
 }

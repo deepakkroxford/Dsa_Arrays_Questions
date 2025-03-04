@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Q42_PartitionArrayAccToGivenPivot {
     public int[] pivotArray(int[] nums, int pivot) {
         int res[] = new int[nums.length];
@@ -22,6 +24,88 @@ public class Q42_PartitionArrayAccToGivenPivot {
         }
         return res;
     }
+    public int[] pivotArray_SecondWay(int[] nums, int pivot) {
+        int res[] = new int[nums.length];
+        ArrayList<Integer> lessThanPivot = new ArrayList<>();
+        ArrayList<Integer> equalToPivot = new ArrayList<>();
+        ArrayList<Integer> greaterThanPivot= new ArrayList<>();
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nums[i]<pivot){
+                lessThanPivot.add(nums[i]);
+            }
+            else if(nums[i]==pivot){
+                equalToPivot.add(nums[i]);
+            }
+            else{
+                greaterThanPivot.add(nums[i]);
+            }
+        }
+
+        int i =0;
+        int j=0;
+        int k =0;
+        int x=0;
+        while(i<lessThanPivot.size())
+        {
+            res[x]=lessThanPivot.get(i);
+            i++;
+            x++;
+        }
+
+         while(j<equalToPivot.size())
+        {
+            res[x]=equalToPivot.get(j);
+            j++;
+            x++;
+        }
+
+          while(k< greaterThanPivot.size())
+        {
+            res[x]= greaterThanPivot.get(k);
+            k++;
+            x++;
+        }
+
+        return res;
+    }
+
+    public int[] pivotArray_ThirdWay(int[] nums, int pivot) {
+        // we can count the number that is less than pivot and equal to pivot
+        int countless =0;
+        int countequal = 0;
+        for (int i : nums) {
+            if(i<pivot){
+                countless++;
+            }
+            else if(i==pivot){
+                countequal++;
+            }
+        }
+        int res[] = new int[nums.length];
+        int i =0;
+        int j =countless;
+        int k = countless+countequal;
+
+       for(int x=0;x<nums.length;x++){
+        if(nums[x]<pivot){
+            res[i]=nums[x];
+            i++;
+        }
+        else if (nums[x]>pivot){
+            res[k]=nums[x];
+            k++;
+        }
+        else{
+            res[j]=nums[x];
+            j++;
+        }
+       }
+        return res;
+
+    }
+
+    
     public static void main(String[] args) {
         /*
         leetcode =2161. 
@@ -79,5 +163,22 @@ public class Q42_PartitionArrayAccToGivenPivot {
         for (int i = 0; i < res.length; i++) {
             System.out.print(res[i] + " ");
         }
+
+        System.out.println();
+        int nums1[] = { -3, 4, 3, 2 };
+        int pivot1 = 2;
+        int res1[] = obj.pivotArray_SecondWay(nums1, pivot1);
+        for (int i = 0; i < res1.length; i++) {
+            System.out.print(res1[i] + " ");
+        }
+
+        System.out.println();
+        int nums2[] = { -3, 4, 3, 2 };
+        int pivot2 = 2;
+        int res2[] = obj.pivotArray_ThirdWay(nums2, pivot2);
+        for (int i = 0; i < res2.length; i++) {
+            System.out.print(res2[i] + " ");
+        }
+
     }
 }

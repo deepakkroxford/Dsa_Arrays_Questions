@@ -48,6 +48,7 @@ public class print_The_PAttern {
             }
         }
         System.out.println(ans);
+        sc.close();
 
     }
 }

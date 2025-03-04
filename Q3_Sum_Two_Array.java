@@ -51,6 +51,7 @@ public class Q3_Sum_Two_Array {
         for (int x : sum) {
             System.out.print(" "+x);
         }
+        sc.close();
 
     }
 }
