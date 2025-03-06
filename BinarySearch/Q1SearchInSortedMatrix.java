@@ -31,7 +31,7 @@ public class Q1SearchInSortedMatrix {
            if(mat[i][0]<=x && x<=mat[i][mat[0].length-1])
            {
              
-             if(binarySearch( mat[i],x)){;
+             if(binarySearch(mat[i],x)){;
                  return true;
               }
            }
