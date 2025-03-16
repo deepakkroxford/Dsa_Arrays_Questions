@@ -3,7 +3,7 @@ package Matrix_DSA_Problem;
 /**
  * row_with_mAX_N0_1
  */
-public class row_with_mAX_N0_1 {
+public class Q7_row_with_mAX_N0_1 {
 
     public static void main(String[] args) {
         /*

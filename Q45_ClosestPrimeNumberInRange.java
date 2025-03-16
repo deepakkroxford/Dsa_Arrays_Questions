@@ -48,7 +48,8 @@ public class Q45_ClosestPrimeNumberInRange {
 
     }
     public static void main(String[] args) {
-        /*
+        /*Leetcode - 2523
+        https://leetcode.com/problems/closest-prime-numbers-in-range/
          * Given two positive integers left and right, find the two integers num1 and
          * num2 such that:
          * 
@@ -89,6 +90,6 @@ public class Q45_ClosestPrimeNumberInRange {
         Q45_ClosestPrimeNumberInRange obj = new Q45_ClosestPrimeNumberInRange();
         int res[] = obj.closestPrimes(left, right);
         System.out.println(res[0]+" "+res[1]);
-        
+
     }
 }

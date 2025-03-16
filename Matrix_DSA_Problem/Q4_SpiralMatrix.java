@@ -3,7 +3,7 @@ package Matrix_DSA_Problem;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpiralMatrix {
+public class Q4_SpiralMatrix {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<Integer>();
         /*
@@ -63,7 +63,7 @@ public class SpiralMatrix {
     public static void main(String[] args) {
         
         int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-        SpiralMatrix spiralMatrix = new SpiralMatrix();
+        Q4_SpiralMatrix spiralMatrix = new Q4_SpiralMatrix();
         List<Integer> result = spiralMatrix.spiralOrder(matrix);
         System.out.println(result); // Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
     }

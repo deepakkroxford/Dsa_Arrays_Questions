@@ -1,6 +1,6 @@
 package Matrix_DSA_Problem;
 
-public class SetMatrix_To_Zero {
+public class Q3_SetMatrix_To_Zero {
     public void setZeroes(int[][] matrix) {
         // step 1 :- I will mark the matrix as zero if there is any zero present in the
         // Check if the first row and first column need to be zero
@@ -178,7 +178,7 @@ public class SetMatrix_To_Zero {
 
     }
 
-    public void setZeroesExtraSpace(int[][] arr) {
+    public static void setZeroesExtraSpace(int[][] arr) {
         int m = arr.length;
         int n = arr[0].length;
 
@@ -211,7 +211,7 @@ public class SetMatrix_To_Zero {
 
     public static void main(String[] args) {
         // Create an instance of the class
-        SetMatrix_To_Zero obj = new SetMatrix_To_Zero();
+        Q3_SetMatrix_To_Zero obj = new Q3_SetMatrix_To_Zero();
 
         // Input matrix
         int[][] matrix = {
@@ -237,6 +237,10 @@ public class SetMatrix_To_Zero {
         // Print the matrix after modification
         System.out.println("Matrix After Setting Zeros:");
         printMatrix(matrix);
+
+        setZeroesExtraSpace(matrix2);
+        System.out.println("Printing the matrix2 after setting zero");
+        printMatrix(matrix2);
     }
 
     // Utility method to print the matrix
