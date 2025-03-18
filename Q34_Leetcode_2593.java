@@ -40,7 +40,7 @@ public class Q34_Leetcode_2593 {
     }
 
     public static void main(String[] args) {
-        /*leetcode :- https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/description/?envType=daily-question&envId=2024-12-14
+        /*leetcode :-Find Score of an Array After Marking All Elements https://leetcode.com/problems/find-score-of-an-array-after-marking-all-elements/description/?envType=daily-question&envId=2024-12-14
          * 
          * Solved
          * Medium

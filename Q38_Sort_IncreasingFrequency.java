@@ -10,7 +10,7 @@ public class Q38_Sort_IncreasingFrequency {
             {
                 map.put(arr[i],map.getOrDefault(arr[i], 0)+1);
             }
-            //Step 2 :Stroe the array value into Integer
+            //Step 2 :Store the array value into Integer
             Integer[] arr1 = new Integer[arr.length];
             for(int i=0;i<arr.length;i++)
             {

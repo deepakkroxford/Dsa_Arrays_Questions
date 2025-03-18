@@ -8,6 +8,7 @@ public class Q39_TopKFrequentElement {
         {
             map.put(arr[i],map.getOrDefault(arr[i], 0)+1);
         }
+        // sort by the frequency 
         List<Map.Entry<Integer,Integer>> entries = new ArrayList<>(map.entrySet());
         entries.sort((a,b)->{
             int freqA = a.getValue();
@@ -16,6 +17,8 @@ public class Q39_TopKFrequentElement {
             return freqB-freqA;
             //return b.getValue()-a.getValue();
         });
+
+        // finding the top k element from the list 
         int ans[] = new int [k];
         for(int i=0;i<k;i++)
         {

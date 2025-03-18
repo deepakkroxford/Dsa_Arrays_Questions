@@ -55,5 +55,6 @@ public class Q41_move_all_zero_end_array {
         {
             System.out.println(arr[x]);
         }
+        sc.close();
     }
 }
