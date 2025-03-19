@@ -65,6 +65,7 @@ public class Q13BookAllocationProblem {
         if(k>arr.length) {
             return ans;
         }
+        //So the reason behind finding the maximum value from the array is to get our starting point for the distribution.
         for(int i=0;i<arr.length;i++) {
             high+=arr[i]; // and setting the highest value we can assing to one student so the sum of all pages.
             low = Math.max(low, arr[i]); // we are setting the low value  to the maximum number of pages in the book

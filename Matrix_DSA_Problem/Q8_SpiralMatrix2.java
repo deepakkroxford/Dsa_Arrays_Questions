@@ -36,23 +36,23 @@ public class Q8_SpiralMatrix2 {
 
             // step 3: right to left and when we move right to left bottom remain constant
 
-            if(top<=bottom){
-            for (int i = right; i >= left; i--) {
-                matrix[bottom][i] = counter++;
+            if (top <= bottom) {
+                for (int i = right; i >= left; i--) {
+                    matrix[bottom][i] = counter++;
+                }
+                bottom--;
             }
-            bottom--;
-        }
 
             // step 4 : bottom to top when we move bottom to top the left pointer remain
             // constant
 
-            if(left<=right){
-            for (int i = bottom; i >= top; i--) {
-                matrix[i][left] = counter++;
+            if (left <= right) {
+                for (int i = bottom; i >= top; i--) {
+                    matrix[i][left] = counter++;
+                }
+                left++;
             }
-            left++;
-          }
-          
+
         }
         return matrix;
 
@@ -82,10 +82,10 @@ public class Q8_SpiralMatrix2 {
         int n = 1;
         Q8_SpiralMatrix2 spiralMatrix = new Q8_SpiralMatrix2();
         int[][] result = spiralMatrix.generateMatrix(n);
-        
+
         // Print the result matrix
-        for(int i = 0; i < result.length; i++) {
-            for(int j = 0; j < result[0].length; j++) {
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[0].length; j++) {
                 System.out.print(result[i][j] + " ");
             }
             System.out.println();

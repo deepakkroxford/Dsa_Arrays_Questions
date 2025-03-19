@@ -48,9 +48,9 @@ public class Q9FirstAndLastPos {
             int mid = low + (high - low) / 2;
             if (arr[mid] == target) {
                 lastPos = mid; // this is my possible answer
-                low = mid + 1; // may be there a smaller index present leftside
+                low = mid + 1; // may be there a smaller index present rightside
 
-            } else if (arr[mid] < target) {
+            } else if (arr[mid] < target) {    
                 low = mid + 1;
             } else {
                 high = mid - 1;
