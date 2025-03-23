@@ -96,5 +96,11 @@ public class Q5_rotate_by_90_degree {
         System.out.println();
         rotateII(matrix);
 
+
+        /*
+         * for rotating the 90 degree of the matrix i have to first find the transpose of the matrix
+         * then i have to reverse each row then we get 90 degree rotation.
+         */
+
     }
 }
