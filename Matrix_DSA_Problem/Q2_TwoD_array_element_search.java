@@ -33,6 +33,7 @@ public class Q2_TwoD_array_element_search {
            }
         }
        }
+       sc.close();
 
 
 

@@ -2,9 +2,8 @@ package Matrix_DSA_Problem;
 
 public class Q3_SetMatrix_To_Zero {
     public void setZeroes(int[][] matrix) {
-        // step 1 :- I will mark the matrix as zero if there is any zero present in the
-        // Check if the first row and first column need to be zero
-        // firstrow and firstcol
+        // step 1 :- In the first step i will check if matrix[i][j]==0 if true then i will check if i==0 and j==0  if any one 
+        // is true then i will make it true if not then i will mark the matrix using matrix[i][0]=0 and matrix[0][j];
 
         boolean firstrow = false;
         boolean firstcol = false;

@@ -39,6 +39,6 @@ public class Q1_TwoD_Array_Inisilization {
             }
             System.out.println();
         }
-
+        sc.close();
     }
 }

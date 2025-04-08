@@ -65,14 +65,6 @@ public class Q8_Rotate_arrya_k_element {
             System.out.print(num + " ");
         }
 
-
-
-
-
-
-
-
-
         // // Ensure k is within the bounds of the array length
         // k = k % n;
 

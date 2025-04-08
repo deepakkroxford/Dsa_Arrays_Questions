@@ -35,7 +35,7 @@ public class Q14AgressiveCow {
           Arrays.sort(stalls);
           int low = 1; // the minimum distance should be one at least between two cows
           int high = stalls[stalls.length - 1] - stalls[0]; // the maximum distance between the two cow is when we place the cow in the first position ans the last poistion 
-            int ans = 0;
+          int ans = 0;
           /*
            * Step 2: writing the logic for the binary search
            */
