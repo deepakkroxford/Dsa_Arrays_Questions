@@ -29,7 +29,7 @@ class stock {
     }
 }
 
-public class Q29_Stock_Sell {
+public class Q29_BestTimeTo_Buy_SellStock {
     public static void main(String[] args) {
         /*
          * You are given an array prices where prices[i] is the price of a given stock

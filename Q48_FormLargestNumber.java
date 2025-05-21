@@ -14,7 +14,7 @@ public class Q48_FormLargestNumber {
 
     public String largestNumber(int[] nums) {
 
-        //Step 1 : We have to conver into String to perform the operation beacuse the number is very large according to the question 
+        //Step 1 : We have to convert into String to perform the operation beacuse the number is very large according to the question 
         String [] value = new String[nums.length];
         for(int i =0;i<nums.length;i++)
         {
@@ -71,6 +71,11 @@ public class Q48_FormLargestNumber {
         String ans = obj.largestNumber(nums);
         System.out.println(ans);
 
+        String x = "10";
+        String y = "20";
+
+        int v =(x+y).compareTo(y+x); // this is the logic to compare two numbers in string format
+        System.out.println(v); // it will return -1 if x+y is less than y+x, 0 if they are equal and 1 if x+y is greater than y+x
 
         int nums2[] = {0,0};
         String ans2 = obj.largestNumber(nums2);
