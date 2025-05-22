@@ -25,20 +25,31 @@ class brutetooptimal {
 
     }
 
-    ArrayList<Integer> subarraySumON(int[] arr, int n, int s){
+    ArrayList<Integer> subarraySumON(int[] arr, int n, int target){
         ArrayList<Integer> ans = new ArrayList<>();
         
+        int i=0;
+        int j=0;
+        int currentSum = 0;
+        while(i<arr.length) {
+            currentSum += arr[i];
+            
+            while(j<=i && currentSum>target) {
+                currentSum -= arr[j];
+                j++;
+            }
 
+            if(currentSum==target && j<=i) 
+            {
+                ans.add(j+1);
+                ans.add(i+1);
+                return ans;
+            }
 
+            i++;
+        }
 
-
-
-
-
-
-
-
-
+        ans.add(-1);
         return ans;
     }
 
@@ -96,44 +107,9 @@ public class Q4_Sub_array_withgiven_sum {
          */
 
         brutetooptimal result = new brutetooptimal();
-        int s = 15;
+        int target = 15;
         int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         int n = arr.length;
-        System.out.println(result.subarraySumON2(arr, n, s));
-
-        // optimal solution
-        ArrayList<Integer> ans = new ArrayList<>();
-        if (s == 0) {
-            ans.add(-1);
-            System.out.println(ans);
-        }
-
-        int l = 0;
-        int r = 0;
-        int sum = arr[0];
-        boolean isfound = false;
-        while (r < arr.length - 1) {
-            if (sum == s) {
-                isfound = true;
-                break;
-            } else if (sum < s) {
-                r++;
-                if (r < n)
-                    sum = sum + arr[r];
-
-            } else {
-                sum = sum - arr[l];
-                l++;
-            }
-        }
-
-        if (isfound) {
-            ans.add(l + 1);
-            ans.add(r + 1);
-            System.out.println(ans);
-        }
-        ans.add(-1);
-        System.out.println(ans);
-
+        System.out.println(result.subarraySumON(arr, n, target));
     }
 }
