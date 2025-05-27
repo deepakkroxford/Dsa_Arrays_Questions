@@ -11,9 +11,10 @@ public class Q12SearchInSortedII {
             {
                 return true;
             }
-            if(arr[low]==arr[mid])
+            if(arr[low]==arr[mid] && arr[mid]==arr[high])
             {
                 low++;
+                high--;
                 continue;
             }
             else if(arr[low]<=arr[mid])

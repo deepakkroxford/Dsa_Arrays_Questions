@@ -29,7 +29,7 @@ public class Q9FirstAndLastPos {
             if (arr[mid] == target) {
                 leastPos = mid; // this is my possible answer
                 high = mid - 1; // may be there a smaller index present leftside
-
+                
             } else if (arr[mid] < target) {
                 low = mid + 1;
             } else {
@@ -42,7 +42,7 @@ public class Q9FirstAndLastPos {
     static int righMostBinarySearch(int arr[], int target) {
         int low = 0;
         int high = arr.length - 1;
-        ;
+        
         int lastPos = -1;
         while (low <= high) {
             int mid = low + (high - low) / 2;

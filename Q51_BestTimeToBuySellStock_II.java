@@ -6,7 +6,7 @@ public class Q51_BestTimeToBuySellStock_II {
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > bestBuy) {
                 maxProfit += arr[i] - bestBuy;
-
+                
                 bestBuy = arr[i];
             } else {
                 bestBuy = arr[i];

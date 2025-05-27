@@ -7,7 +7,7 @@ public class Q24_CountSubarrayEqual01 {
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         int subArray=0;
         int sum = 0;
-        map.put(0, 1);
+        map.put(sum, 1);
 
         for(int i=0;i<arr.length;i++)
         {
