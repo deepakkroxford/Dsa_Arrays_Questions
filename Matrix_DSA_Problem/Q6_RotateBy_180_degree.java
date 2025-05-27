@@ -67,12 +67,12 @@ public class Q6_RotateBy_180_degree {
 
         for(int col=0; col<matrix[0].length;col++)
         {
-            revrseColWise(matrix,col);
+            revrseColWise(matrix,col); // here we are passing each column and revering them to get the desired result.
         }
 
-        for(int i=0;i<matrix.length;i++)
+        for (int i=0;i<matrix.length;i++)
         {
-            reverseRow(matrix[i]);
+            reverseRow(matrix[i]); // here we are passing each row and revering them to get the desired result.
         }
 
 
