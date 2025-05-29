@@ -44,9 +44,7 @@ public class Q14_Missing_and_repeating {
          //this hash array should be n+1 because we the size of n=5 so process the 5 in the hash arry we need to decalre n+1;
         int missing = -1;
         int repeating = -1;
-        for(int i =0;i<n;i++)
-        {
-            int num = arr[i];
+        for (int num : arr) {
             hash[num]++;
         }
 
@@ -59,7 +57,6 @@ public class Q14_Missing_and_repeating {
             if(hash[i]==0)
             {
                 missing = i;
-
             }
 
             if(missing!=-1 && repeating!=-1)
@@ -67,11 +64,6 @@ public class Q14_Missing_and_repeating {
                 break;
             }
         }
-
-    System.out.println("the missing number is "+missing+" the repeating number is "+repeating);
-
-        
-       
-
+        System.out.println("the missing number is "+missing+" the repeating number is "+repeating);
     }
 }
